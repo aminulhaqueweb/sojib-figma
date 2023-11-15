@@ -1,0 +1,952 @@
+/* -----------------links----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+/* -------------------links part end------------------------ */
+/* ---------------------common css----------------- */
+*{
+    padding: 0%;
+    margin: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+h1 h2 h3 h4 h5 h6 ul ol{
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+}
+ul ol{
+    list-style: none;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/* -------------------common css part end--------------- */
+/* -----------------variavle part start----------------------- */
+:root{
+    --rovoto: 'Roboto', sans-serif;
+    --brand-color:#1A5D1A;
+    --primary-color:#000000;
+    --secoundary-color:#fff;
+}
+/* ------------------variavle part end------------------------- */
+
+/* ---------------------------------------- */
+.main_menu a img{
+    width: 72px;
+}
+.main_menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: var(--background_color);
+    z-index: 999;
+    animation: slide 1s ;
+}
+@keyframes slide{
+    from{
+        top: -20%;
+    }
+    to{
+        top: 0;
+    }
+}
+.main_menu ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    margin-left: 30px;
+}
+.main_menu ul li .as:hover{
+    color: var(--brand-color);
+    scale: 1.2;
+}
+.manu_button a{
+    width: 150px;
+    height: 50px;
+    background: var(--brand-color);
+    border: 1px solid var(--brand-color);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--secoundary-color);
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    transition: all linear .3s;
+}
+.manu_button a:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    border:  2px solid var(--brand-color);
+}
+.manu_button_2 a{
+    width: 110px;
+    height: 50px;
+    background: var(--brand-color);
+    border: 1px solid var(--brand-color);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--secoundary-color);
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    transition: all linear .3s;
+    margin-left: 52px;
+}
+.manu_button_2 a:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    border:  2px solid var(--brand-color);
+}
+
+/* -----------------menu part end-------------------------- */
+
+/* -----------------bannar parrt start----------------------- */
+#bannar{
+    background: url(../img/banner\ image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannar_img{
+    width: 424px;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    margin-bottom: 14px;
+}
+.bannar_img h1{
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 700;
+    color: var(--brand-color);
+    width:330px;
+    background: var(--secoundary-color);
+    position: absolute;
+    top: 246px;
+    left: 23px;
+}
+.bannar_button{
+    display: flex;
+}
+.bannar_button1 a{
+    font-size: 25px;
+    font-family: var(--rovoto);
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    background: var(--secoundary-color);
+    text-align: center;
+    line-height: 60px;
+    margin-left: 321px;
+    transition: all linear .3s;
+}
+.bannar_button1 a:hover{
+    color: var(--secoundary-color);
+    background: var(--brand-color);
+}
+.bannar_button2 a{
+    font-size: 25px;
+    font-family: var(--rovoto);
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    background: var(--secoundary-color);
+    text-align: center;
+    margin-bottom: 28px;
+    line-height: 60px;
+    margin-left: 50px;
+    transition: all linear .3s;
+}
+.bannar_button2 a:hover{
+    color: var(--secoundary-color);
+    background: var(--brand-color);
+}
+.contact_follow{
+    display: flex;
+}
+.follow_me{
+    display: flex;
+}
+.contact_number a{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    width: 245px;
+    height: 40px;
+    background: var(--secoundary-color);
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 35px;
+    margin-left: 321px;
+    transition: all linear .3s;
+}
+.contact_number a:hover{
+    color: var(--secoundary-color);
+    background: var(--brand-color);
+}
+.contact_number a span{
+margin-right: 8px;
+color: skyblue;
+}
+.contact_number a span:hover{
+    color: var(--secoundary-color);
+}
+.follow_me .facebook a{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--secoundary-color);
+    background: rgb(43, 120, 235);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 87px;
+    transition: all linear .3s;
+}
+.follow_me .facebook a:hover{
+    color:rgb(43, 120, 235) ;
+    background: var(--secoundary-color);
+    border: 1px solid rgb(43, 120, 235);
+}
+.follow_me .intragram a{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--secoundary-color);
+    background: rgb(43, 120, 235);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 15px;
+    transition: all linear .3s;
+}
+.follow_me .intragram a:hover{
+    color:rgb(43, 120, 235) ;
+    background: var(--secoundary-color);
+    border: 1px solid rgb(43, 120, 235);
+}
+.follow_me .twiter a{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--secoundary-color);
+    background: rgb(43, 120, 235);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 15px;
+    transition: all linear .3s;
+}
+.follow_me .twiter a:hover{
+    color:rgb(43, 120, 235) ;
+    background: var(--secoundary-color);
+    border: 1px solid rgb(43, 120, 235);
+}
+.follow_me .linkin a{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--secoundary-color);
+    background: rgb(43, 120, 235);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 15px;
+    transition: all linear .3s;
+}
+.follow_me .linkin a:hover{
+    color:rgb(43, 120, 235) ;
+    background: var(--secoundary-color);
+    border: 1px solid rgb(43, 120, 235);
+}
+/* -----------------bannar part- end------------------------- */
+
+/* ----------------food_items slider part start------------------------ */
+#food_items{
+    background: url(../img/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.food_items_head h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 4px;
+}
+.food_items_head h3{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+    text-align: center;
+    padding-bottom: 22px;
+}
+.food_items_slider{
+    position: relative;
+}
+.food_items_slider .rotate{
+    width: 400px;
+  animation: rotade 3s linear infinite;
+
+}
+@keyframes rotade{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.food_items_1 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 48px;
+    left: 52px;
+    z-index: 999;
+}
+/* --------------food_items slider part end----------------------------- */
+/* ---------SPECIALS Dishes part start---------- */
+#spesial_dishes{
+    background: url(../img/Rectangle\ 11\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.spesial_dishes_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+    padding-top: 91px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+.food_card{
+   width: 350px;
+   border-radius: 15px;
+   color: var(--secoundary-color);
+   box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.30);
+   margin-bottom: 127px;
+}
+.food_card:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+}
+.food_card img{
+    width: 350px;
+    border-radius: 15px;
+}
+.food_card h2{
+    font-size: 30px;
+    font-family: var(--rovoto);
+    font-weight: 700;
+    color: var(--brand-color);
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+.food_card p{
+    font-size: 18px;
+    font-family: var(--rovoto);
+    font-weight: 400;
+    color: var(--primary-color);
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    width: 170px;
+}
+.food_card_button a{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--secoundary-color);
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px 0px 15px 0px;
+    color: var(--secoundary-color);
+    background: var(--brand-color);
+    text-align: center;
+    border:  1px solid var(--secoundary-color);
+    margin-bottom: 30px;
+    margin-left: 17px;
+    transition: all linear .3s;
+}
+.food_card_button a:hover{
+    color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+    background: transparent;
+    scale: 1.1;
+}
+/* -----------------SPECIALS Dishes part end--------------- */
+
+/* --------------------our menu part start--------------------- */
+#our_menu{
+    background: url(../img/Rectangle\ 15.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.check_out_text h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 40px;
+}
+.check_out_text h3{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+    text-align: center;
+}
+.menu_list{
+    width: 486px;
+    background: #D9D9D9;
+    padding-bottom: 40px;
+    margin-left: 172px;
+    margin-top: 31px;
+}
+.manu_list_head h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+.manu_list_head
+{
+    position: relative;
+    padding-left: 30px;
+}
+.manu_list_head::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    background: var(--brand-color);
+    top: 54px;
+    left: 136px;
+}
+.menu ul li h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+}
+.menu ul li h3{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li::after{
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 4px;
+    background: var(--primary-color);
+    top: 54px;
+    left: 0px;
+}
+.menu ul li h3 span{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color); 
+    padding-left: 58px;
+}
+.cheif img{
+    width: 304px;
+    margin-left: 102px;
+    margin-top: 31px;
+}
+.menu_list1{
+    width: 486px;
+    background: #D9D9D9;
+    padding-bottom: 40px;
+    margin-top: 31px;
+    margin-left: 38px;
+}
+.cheif1{
+    width: 304px;
+    margin-left: 200px;
+    margin-top: 31px;
+}
+.manu_list_head1{
+    padding-left: 30px;
+}
+.manu_list_head1 h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+.manu_list_head1
+{
+    position: relative;
+}
+.manu_list_head1::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    background: var(--brand-color);
+    top: 54px;
+    left: 136px;
+}
+
+/* -----------------our menu part end ------------------------------ */
+
+/* ----------------food_gallery part start------------------------ */
+.food_gallery_head h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 61px;
+    padding-bottom: 8px;
+}
+.food_gallery_head h3{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 26px;
+}
+.fgh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-tabs .nav-link {
+    border: none;  
+}
+.food_button{
+    display: flex;
+    gap: 27px;
+    justify-content: center;
+    align-items: center;
+}
+.asd{
+    width: 150px;
+    height: 50px;
+    background: var(--brand-color);
+    border: none;
+    color: var(--secoundary-color);
+    border-radius: 15px 0px 15px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--secoundary-color);
+    transition: all linear .3s;
+}
+.asd:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.azs{
+    width: 160px;
+    height: 50px;
+    background: var(--brand-color);
+    border: none;
+    color: var(--secoundary-color);
+    border-radius: 15px 0px 15px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--secoundary-color);
+    transition: all linear .3s;
+}
+.azs:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.axs{
+    width: 160px;
+    height: 50px;
+    background: var(--brand-color);
+    border: none;
+    color: var(--secoundary-color);
+    border-radius: 15px 0px 15px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--secoundary-color);
+    transition: all linear .3s; 
+}
+.axs:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.acs{
+    width: 160px;
+    height: 50px;
+    background: var(--brand-color);
+    border: none;
+    color: var(--secoundary-color);
+    border-radius: 15px 0px 15px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--secoundary-color);
+    transition: all linear .3s; 
+}
+.acs:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.aws{
+    width: 160px;
+    height: 50px;
+    background: var(--brand-color);
+    border: none;
+    color: var(--secoundary-color);
+    border-radius: 15px 0px 15px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--secoundary-color);
+    transition: all linear .3s; 
+}
+.aws:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.food_card1{
+    width: 330px;
+    background: var(--secoundary-color);
+    border-radius: 18px 0px 0px 18px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.30);
+    margin-top: 39px;
+    margin-bottom: 43px;
+    transition: all linear .5;
+}
+.food_card1:hover{
+    scale: 1.1;
+}
+.row1{
+    display: flex;
+    gap: 40px;
+}
+.row2{
+    display: flex;
+    gap: 40px;
+}
+.card_img img{
+    width: 205px;
+    margin-left: 62px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.food_card1 h2{
+    font-size: 30px;
+    font-family: var(--rovoto);
+    font-weight: 700;
+    color: var(--brand-color);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.food_card1 h3{
+    font-size: 14px;
+    font-family: var(--rovoto);
+    font-weight: 400;
+    color: var(--primary-color);
+    width: 232px;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 11px;
+}
+.card_button a{
+    font-size: 18px;
+    font-family: var(--rovoto);
+    font-weight: 700;
+    background: var(--brand-color);
+    color: var(--secoundary-color);
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 92px;
+    border-radius: 15px 0px 15px 0px;
+    transition: all linear .3s;
+}
+.card_button a:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    border: 1px solid var(--brand-color);
+}
+.food_card1 p{
+    font-size: 20px;
+    color: var(--primary-color);
+    padding-left: 272px;
+}
+
+/* -----------food Gallery part end---------- */
+/* --------------Highest quality part start---------- */
+#highest_quality{
+    padding-top: 56px;
+}
+.highest_quality_head h2{
+    font-size: 20px;
+    font-family: var(--rovoto);
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 11px;
+}
+.highest_quality_head h3{
+    font-size: 35px;
+    font-family: var(--rovoto);
+    font-weight: 700;
+    color: var(--brand-color);
+    padding-bottom: 11px;
+    width: 653px;
+}
+.highest_quality_head h4{
+    font-size: 18px;
+    font-family: var(--rovoto);
+    font-weight: 400;
+    color:#2A435D;
+    padding-bottom: 29px;
+    width: 493px;
+}
+.highest_quality_text{
+    padding-left: 42px;
+}
+.highest_quality_text h2 ul li{
+     font-size: 20px;
+     font-weight: 400;
+     font-family: var(--rovoto);
+     color: #2A435D;
+     padding-bottom: 30px;
+}
+p {
+    margin-bottom: 0;
+}
+.highest_text_img img{
+    margin-left: 42px;
+    width: 500px;
+    border-radius: 20px;
+}
+.highest_quality_img img{
+    width: 380px;
+    border-radius: 20px;
+    margin-top: 36px;
+}
+.highest_quality_button a{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--secoundary-color);
+    background: var(--brand-color);
+    border-radius: 15px 0px 15px 0px;
+    border: 1px solid var(--brand-color);
+    margin-top: 44px;
+    margin-left: 65px;
+    width: 257px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all linear .3s;
+}
+.highest_quality_button a:hover{
+    color: var(--brand-color);
+    background: var(--secoundary-color);
+    border: 1px solid var(--brand-color);
+}
+
+/* -----------------Highest quality part end-------------------------- */
+
+/* -----------------Happy client part start--------------------------- */
+#happy_client{
+    padding-bottom: 78px ;
+}
+.happy_client_cards{
+    width: 300px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 63px;
+}
+.happy_client_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 49px;
+}
+.client_img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 115px;
+    margin-top: 25px;
+}
+.client_name h3{
+    font-size: 18px;
+    font-family: var(--primary-color);
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-top: 13px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.client_text h2{
+    width: 255px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 28px;
+}
+.client_revew ul li{
+    list-style: none;
+    color: #FF7C04;
+}
+.client_revew ul li span{
+    color: #FF7C04;
+}
+.client_revew ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 23px;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.client_liks p{
+    color: var(--primary-color);
+    padding-left: 219px;
+    font-size: 18px;
+}
+.client_liks p span{
+   font-size: 25px;
+}
+.happy_client_cards2{
+    width: 300px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 40px;
+}
+.happy_client_cards3{
+    width: 300px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* -------------------Happy client part end------------------------- */
+
+/* -------------------our team part start--------------------- */
+#our_team{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.our_team_head h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    text-align: center;
+}
+.our_team_head h3{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--rovoto);
+    color: var(--brand-color);
+    text-align: center;
+    margin-bottom: 19px;
+}
+.team_card1{
+    width: 341px;
+    background: var(--secoundary-color);
+    border: 1px solid #D9D9D9;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 48px;
+}
+.team_card1 img{
+    width: 217px;
+    margin-top: 16px;
+    margin-left: 62px;
+}
+.team_card1 h2{
+   font-size: 30px;
+   font-family: var(--rovoto);
+   font-weight: 700;
+   color: var(--brand-color);
+   text-align: center;
+   margin-top: 15px;
+   position: relative;
+}
+.team_card1 h2::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    background: #000000;
+    top: -15px;
+    left:74px;
+}
+.team_card1 h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--rovoto);
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 46px;
+}
+
+/* ------------------------------------------- */
+
+/* ---------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------- */
